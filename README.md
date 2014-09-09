@@ -8,5 +8,5 @@ be installed.
 To use it:
 
 ```
-brew install http://
+brew install https://raw.githubusercontent.com/bpeisenbraun/homebrew/master/ssh2.rb
 ```
