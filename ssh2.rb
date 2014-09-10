@@ -20,6 +20,15 @@ class Ssh2 < Formula
                  "apps/ssh/ssh-agent2.1", "apps/ssh/ssh-keygen2.1",
                  "apps/ssh/ssh-add2.1"
     man5.install "apps/ssh/ssh2_config.5"
-          
+  end
+
+  def caveats; <<-EOS.undent
+    This formula will install SSH.COM binaries and man pages for the 
+    following: ssh2, scp2, sftp2, ssh-agent2, ssh-keygen2 and ssh-add2.
+
+    The ssh2_config man page has information on configuration options, and 
+    enabling the ssh-agent2 process in your shell is left as an exercise for
+    the user.
+    EOS
   end
 end
