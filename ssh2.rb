@@ -15,5 +15,11 @@ class Ssh2 < Formula
     bin.install "apps/ssh/ssh2", "apps/ssh/scp2", "apps/ssh/sftp2", 
                 "apps/ssh/ssh-agent2", "apps/ssh/ssh-keygen2", 
                 "apps/ssh/ssh-add2"
+
+    man1.install "apps/ssh/ssh2.1", "apps/ssh/scp2.1", "apps/ssh/sftp2.1",
+                 "apps/ssh/ssh-agent2.1", "apps/ssh/ssh-keygen2.1",
+                 "apps/ssh/ssh-add2.1"
+    man5.install "apps/ssh/ssh2_config.5"
+          
   end
 end
