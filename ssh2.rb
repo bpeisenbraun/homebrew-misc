@@ -5,7 +5,13 @@ class Ssh2 < Formula
   url "http://fossies.org/linux/misc/old/ssh-3.2.9.1.tar.gz"
   sha1 "22e4589c889aef18e53a8942716084f0d8ede7db"
 
+  # Don't clean the 32-bit compilation variables
+  env :std
+
   def install
+    # Force 32-bit compilation
+    ENV['CFLAGS']='-arch i386'
+    ENV['LDFLAGS']='-arch i386'
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
