@@ -3,9 +3,9 @@ require "formula"
 
 class MuttKz < Formula
   homepage "https://kzak.redcrew.org/doku.php?id=mutt:start"
-  url "ftp://redcrew.org/pub/mutt-kz/v1.5.23.1/mutt-kz-1.5.23.1-rc1.tar.xz"
-  sha1 "a2ac1d76708a9c5e1546b406110ce180ffcb738b"
-  version "1.5.23.1-rc1"
+  url "ftp://redcrew.org/pub/mutt-kz/v1.5.23.1/mutt-kz-1.5.23.1.tar.xz"
+  sha1 "40d80a05661d86f0a8b8b191252c8fdf7bb0db94"
+  version "1.5.23.1"
 
   head do
     url "https://github.com/karelzak/mutt-kz.git", :using => :git
